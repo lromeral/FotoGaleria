@@ -18,6 +18,7 @@ public abstract class SingleFragmentLoader extends AppCompatActivity {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.single_fragment_loader);
+
         FragmentManager fragmentManager = getSupportFragmentManager();
         Fragment fg = fragmentManager.findFragmentById(R.id.fragment_container);
         if (fg == null){

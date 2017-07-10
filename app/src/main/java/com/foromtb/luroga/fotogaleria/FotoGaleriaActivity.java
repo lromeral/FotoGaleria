@@ -9,6 +9,6 @@ public class FotoGaleriaActivity extends SingleFragmentLoader {
 
     @Override
     protected Fragment createFragment() {
-        return new FotoGaleriaFragment();
+        return FotoGaleriaFragment.newInstance();
     }
 }
